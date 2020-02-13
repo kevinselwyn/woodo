@@ -1,20 +1,14 @@
-#woodo
+# woodo
 
 Allows sudoers to summon Pokémon #185 from the command line
 
-##Installation
+## Installation
 
 ```bash
 make && sudo make install
 ```
 
-If you would like to trick foolish users into opening up a shell listener with `nc` at port 25723, use the EVIL macro:
-
-```bash
-gcc -o woodo woodo.c -DEVIL
-```
-
-##Usage
+## Usage
 
 This will not summon Sudowoodo:
 
@@ -28,7 +22,7 @@ This will:
 sudo woodo
 ```
 
-##Acknowledgements
+## Acknowledgements
 
 All credit to Game Freak for their Pokémon.
 

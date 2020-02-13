@@ -11,7 +11,7 @@ test: build
 	sudo ./$(NAME)
 
 install: $(NAME)
-	install -m 0755 $(NAME) $(BIN_DIR);
+	install -m 0755 $(NAME) $(BIN_DIR)
 
 uninstall:
 	rm -f $(BIN_DIR)/$(NAME)
