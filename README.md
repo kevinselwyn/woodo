@@ -5,7 +5,8 @@ Allows sudoers to summon Pokémon #185 from the command line
 ## Installation
 
 ```bash
-make && sudo make install
+cargo build --release
+cargo install --path .
 ```
 
 ## Usage
